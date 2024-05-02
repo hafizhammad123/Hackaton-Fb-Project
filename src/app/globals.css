@@ -16,18 +16,414 @@
   }
 }
 
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+.post-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
 }
 
-@layer utilities {
-  .text-balance {
-    text-wrap: balance;
+.post-card {
+  width: 300px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.post-header {
+  padding: 10px;
+  background-color: #f2f2f2;
+}
+
+.post-header h2 {
+  margin: 0;
+  font-size: 18px;
+}
+
+.post-media img,
+.post-media video {
+  width: auto;
+  
+ 
+}
+
+.post-interactions {
+  display: flex;
+  justify-content: space-around;
+  padding: 10px;
+}
+
+.post-interactions button {
+  padding: 5px 10px;
+  border: none;
+  background-color: #007bff;
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.post-interactions button:hover {
+  background-color: #0056b3;
+}
+
+.main-Navbar {
+  padding: 10px;
+  background-color: #007bff;
+  color: black;
+}
+
+/* Navbar.module.css */
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+  background-color: #333;
+  color: #fff;
+}
+
+.logo img {
+  height: 40px;
+  width: auto;
+}
+
+.search input {
+  padding: 0.5rem;
+  border: none;
+  border-radius: 5px;
+}
+
+.profile img {
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+  border: 2px solid #fff;
+}
+
+/* Animation example */
+.profile img:hover {
+  animation: spin 2s linear infinite;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
   }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+/* styles.css */
+
+/* styles.css */
+/* styles.css */
+
+.container {
+  min-height: 100;
+  width: 100%;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  /* Flex-start se top par le jaane ke liye */
+
+}
+
+.navbar {
+  width: 100%;
+  position: fixed;
+  /* Sticky position for top */
+  top: 2;
+  z-index: 1;
+  /* Stick to the top */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+  background-color: #000000;
+  color: #000000;
+  margin-bottom: 50PX;
+
+}
+
+.navbar .logo img {
+  height: 40px;
+  width: auto;
+}
+
+.navbar .search input {
+  padding: 0.5rem;
+  border-radius: 8px;
+  position: relative;
+  left: 170px;
+}
+
+.navbar .profile img {
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+  border: 2px solid #147DC8;
+}
+
+.color {
+  color: #ffff;
+  position: relative;
+  left: 150px;
+
+
+
+}
+
+.BTN {
+  color: #ffff;
+  background-color: #147DC8;
+  padding: 8px;
+  border-radius: 10px;
+  position: relative;
+  left: 20px;
+  bottom: 12px;
+}
+
+/* ---------------------------------------------------------------------- */
+.front {
+
+  background-image: url('https://png.pngtree.com/thumb_back/fw800/background/20220907/pngtree-delve-deeper-into-this-a-gathering-of-corporate-professionals-convening-in-the-conference-chamber-photo-image_48524492.jpg');
+  height: 670px;
+  background-size: cover;
+  background-repeat: no-repeat;
+
+}
+
+.F-btn {
+  display: flex;
+  justify-content: center;
+  position: relative;
+
+  left: 480px;
+  bottom: 70px;
+  width: 30%;
+  background-color: #147DC8;
+  border-radius: 20px;
+  padding: 20px;
+  align-items: center;
+
+}
+
+.logo1 {
+  width: 50%;
+  position: relative;
+  top: 60px;
+  left: 380px;
+}
+
+/*---------------------------*/
+
+.postInput {
+  width: 40%;
+  height: 125px;
+  background-color: #F0F2F5;
+  padding: 20px;
+  border-radius: 10px;
+  margin: 20px;
+  position: relative;
+  left: 350px;
+}
+
+.inputTT {
+  padding: 8PX;
+  width: 90%;
+  border-radius: 10px;
+  position: relative;
+  left: 50px;
+  bottom: 40px;
+}
+
+.line {
+  border-top: solid 2px white;
+  position: relative;
+  bottom: 30px;
+}
+
+.icon1 {
+  position: relative;
+  left: 120px;
+  bottom: 25px;
+
+}
+
+.icon2 {
+  position: relative;
+  left: 230px;
+  bottom: 65px;
+
+}
+
+.hey-btn {
+  position: relative;
+  bottom: 105px;
+  left: 350px;
+  background-color: #007bff;
+  padding: 8px;
+  border-radius: 15px;
+  color: #ffff;
+
+}
+
+/* SILDER---------------- */
+
+.store-panel {
+  width: 50%;
+  background-color: #fff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  padding: 20px;
+  margin: 20px;
+  position: relative;
+  left: 300px;
+  bottom: 20px;
+  margin-top: 150px;
+}
+
+.store-panel h2 {
+  font-size: 24px;
+  color: #333;
+  margin-bottom: 20px;
+
+}
+
+.slider-container {
+  overflow-x: scroll;
+  white-space: nowrap;
+}
+
+.slider-item {
+  display: inline-block;
+  width: 150px;
+  height: 200px;
+
+  border-radius: 10px;
+  margin-right: 10px;
+
+}
+
+.slider-item:last-child {
+  margin-right: 0;
+}
+
+.kaaam {
+  border-radius: 100px;
+  border: solid 2px blue;
+  width: 30%;
+}
+
+.imjj {
+  border-radius: 50px;
+
+}
+
+.rrrr {
+  border-radius: 10px;
+  position: relative;
+  margin-top: 3px;
+  
+
+}
+.rrrr:hover{
+  transform: scale(1.2);
+  z-index: 2;
+  cursor: pointer;
+}
+
+.set {
+  border-radius: 10px;
+  position: relative;
+  margin-top: 3px;
+  height: 100px;
+}
+
+/* post Box */
+
+.main-box {
+  width: 40%;
+  height: 650px;
+  background-color: #ccc;
+}
+
+.posi {
+  position: relative;
+  left: 50px;
+  bottom: 30px;
+}
+
+.pata {
+  position: relative;
+  bottom: 20px;
+}
+
+.post-card {
+  width: 700px;
+  border: 1px solid #ccc;
+  padding: 20px;
+  margin-bottom: 20px;
+  border-radius: 5px;
+  position: relative;
+  left: 300px;
+}
+
+.user-profile {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.user-profile img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+.username {
+  font-weight: bold;
+}
+
+.post-content {
+  margin-bottom: 10px;
+}
+
+.post-actions {
+  display: flex;
+}
+
+.post-actions button {
+  padding: 8px 15px;
+  margin-right: 10px;
+  background-color: #1877f2;
+  border: none;
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+  position: relative;
+  left: 200px;
+}
+
+.post-actions button:hover {
+  background-color: #1558b0;
+}
+
+.ggg{
+  position: relative;
+  bottom: 6610px;
+  position: fixed;
+  top: 0;
+  margin-top: 100px;
+}
+.gg1{
+  position: relative;
+  left: 1050px;
+  position: fixed;
+  top: 0;
+  margin-top: 101px;
 }
